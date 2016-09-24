@@ -14,6 +14,10 @@
 		8432DC431D96D1BD00A3A0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8432DC411D96D1BD00A3A0E2 /* LaunchScreen.storyboard */; };
 		8432DC4E1D96D1BE00A3A0E2 /* CardsStackExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8432DC4D1D96D1BE00A3A0E2 /* CardsStackExampleTests.swift */; };
 		8432DC591D96D1BE00A3A0E2 /* CardsStackExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8432DC581D96D1BE00A3A0E2 /* CardsStackExampleUITests.swift */; };
+		8432DC741D96D2BF00A3A0E2 /* CardsStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8432DC6D1D96D21400A3A0E2 /* CardsStack.framework */; };
+		8432DC751D96D2BF00A3A0E2 /* CardsStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8432DC6D1D96D21400A3A0E2 /* CardsStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8432DC7A1D96D50100A3A0E2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8432DC791D96D50100A3A0E2 /* CardView.swift */; };
+		8432DC801D96E6B900A3A0E2 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8432DC7F1D96E6B900A3A0E2 /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +35,42 @@
 			remoteGlobalIDString = 8432DC341D96D1BD00A3A0E2;
 			remoteInfo = CardsStackExample;
 		};
+		8432DC6C1D96D21400A3A0E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8432DC671D96D21400A3A0E2 /* CardsStack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8432DC0C1D96D11400A3A0E2;
+			remoteInfo = CardsStack;
+		};
+		8432DC6E1D96D21400A3A0E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8432DC671D96D21400A3A0E2 /* CardsStack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8432DC151D96D11400A3A0E2;
+			remoteInfo = CardsStackTests;
+		};
+		8432DC761D96D2BF00A3A0E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8432DC671D96D21400A3A0E2 /* CardsStack.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8432DC0B1D96D11400A3A0E2;
+			remoteInfo = CardsStack;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8432DC781D96D2BF00A3A0E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8432DC751D96D2BF00A3A0E2 /* CardsStack.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8432DC351D96D1BD00A3A0E2 /* CardsStackExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardsStackExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +86,9 @@
 		8432DC541D96D1BE00A3A0E2 /* CardsStackExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsStackExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8432DC581D96D1BE00A3A0E2 /* CardsStackExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsStackExampleUITests.swift; sourceTree = "<group>"; };
 		8432DC5A1D96D1BE00A3A0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8432DC671D96D21400A3A0E2 /* CardsStack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CardsStack.xcodeproj; path = ../CardsStack/CardsStack.xcodeproj; sourceTree = "<group>"; };
+		8432DC791D96D50100A3A0E2 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		8432DC7F1D96E6B900A3A0E2 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8432DC741D96D2BF00A3A0E2 /* CardsStack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				8432DC371D96D1BD00A3A0E2 /* CardsStackExample */,
+				8432DC661D96D1DD00A3A0E2 /* Frameworks */,
 				8432DC4C1D96D1BE00A3A0E2 /* CardsStackExampleTests */,
 				8432DC571D96D1BE00A3A0E2 /* CardsStackExampleUITests */,
 				8432DC361D96D1BD00A3A0E2 /* Products */,
@@ -99,10 +143,12 @@
 			children = (
 				8432DC381D96D1BD00A3A0E2 /* AppDelegate.swift */,
 				8432DC3A1D96D1BD00A3A0E2 /* ViewController.swift */,
+				8432DC791D96D50100A3A0E2 /* CardView.swift */,
 				8432DC3C1D96D1BD00A3A0E2 /* Main.storyboard */,
 				8432DC3F1D96D1BD00A3A0E2 /* Assets.xcassets */,
 				8432DC411D96D1BD00A3A0E2 /* LaunchScreen.storyboard */,
 				8432DC441D96D1BD00A3A0E2 /* Info.plist */,
+				8432DC7F1D96E6B900A3A0E2 /* Pokemon.swift */,
 			);
 			path = CardsStackExample;
 			sourceTree = "<group>";
@@ -125,6 +171,23 @@
 			path = CardsStackExampleUITests;
 			sourceTree = "<group>";
 		};
+		8432DC661D96D1DD00A3A0E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8432DC671D96D21400A3A0E2 /* CardsStack.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8432DC681D96D21400A3A0E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8432DC6D1D96D21400A3A0E2 /* CardsStack.framework */,
+				8432DC6F1D96D21400A3A0E2 /* CardsStackTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +198,12 @@
 				8432DC311D96D1BD00A3A0E2 /* Sources */,
 				8432DC321D96D1BD00A3A0E2 /* Frameworks */,
 				8432DC331D96D1BD00A3A0E2 /* Resources */,
+				8432DC781D96D2BF00A3A0E2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8432DC771D96D2BF00A3A0E2 /* PBXTargetDependency */,
 			);
 			name = CardsStackExample;
 			productName = CardsStackExample;
@@ -221,6 +286,12 @@
 			mainGroup = 8432DC2C1D96D1BD00A3A0E2;
 			productRefGroup = 8432DC361D96D1BD00A3A0E2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8432DC681D96D21400A3A0E2 /* Products */;
+					ProjectRef = 8432DC671D96D21400A3A0E2 /* CardsStack.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8432DC341D96D1BD00A3A0E2 /* CardsStackExample */,
@@ -229,6 +300,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8432DC6D1D96D21400A3A0E2 /* CardsStack.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CardsStack.framework;
+			remoteRef = 8432DC6C1D96D21400A3A0E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8432DC6F1D96D21400A3A0E2 /* CardsStackTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CardsStackTests.xctest;
+			remoteRef = 8432DC6E1D96D21400A3A0E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8432DC331D96D1BD00A3A0E2 /* Resources */ = {
@@ -263,6 +351,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8432DC3B1D96D1BD00A3A0E2 /* ViewController.swift in Sources */,
+				8432DC801D96E6B900A3A0E2 /* Pokemon.swift in Sources */,
+				8432DC7A1D96D50100A3A0E2 /* CardView.swift in Sources */,
 				8432DC391D96D1BD00A3A0E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +385,11 @@
 			isa = PBXTargetDependency;
 			target = 8432DC341D96D1BD00A3A0E2 /* CardsStackExample */;
 			targetProxy = 8432DC551D96D1BE00A3A0E2 /* PBXContainerItemProxy */;
+		};
+		8432DC771D96D2BF00A3A0E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CardsStack;
+			targetProxy = 8432DC761D96D2BF00A3A0E2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -414,6 +509,7 @@
 		8432DC5E1D96D1BE00A3A0E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TB2282VDLT;
 				INFOPLIST_FILE = CardsStackExample/Info.plist;
@@ -427,6 +523,7 @@
 		8432DC5F1D96D1BE00A3A0E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TB2282VDLT;
 				INFOPLIST_FILE = CardsStackExample/Info.plist;
@@ -514,6 +611,7 @@
 				8432DC5F1D96D1BE00A3A0E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8432DC601D96D1BE00A3A0E2 /* Build configuration list for PBXNativeTarget "CardsStackExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +620,7 @@
 				8432DC621D96D1BE00A3A0E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8432DC631D96D1BE00A3A0E2 /* Build configuration list for PBXNativeTarget "CardsStackExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +629,7 @@
 				8432DC651D96D1BE00A3A0E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
