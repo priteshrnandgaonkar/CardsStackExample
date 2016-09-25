@@ -37,8 +37,11 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="error" translatesAutoresizingMaskIntoConstraints="NO" id="Get-ja-Ii3">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="error" translatesAutoresizingMaskIntoConstraints="NO" id="Get-ja-Ii3">
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="Get-ja-Ii3" secondAttribute="height" multiplier="1:1" id="bDX-ZD-ugb"/>
                                                     </constraints>
@@ -49,7 +52,7 @@
                                         <constraints>
                                             <constraint firstItem="Get-ja-Ii3" firstAttribute="top" secondItem="6WR-sX-0eO" secondAttribute="top" id="5KZ-zV-TgZ"/>
                                             <constraint firstAttribute="bottom" secondItem="Get-ja-Ii3" secondAttribute="bottom" id="5hP-ZN-qMD"/>
-                                            <constraint firstItem="Get-ja-Ii3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aGb-8d-nur" secondAttribute="trailing" constant="8" id="9BB-6H-7Tl"/>
+                                            <constraint firstItem="Get-ja-Ii3" firstAttribute="leading" secondItem="aGb-8d-nur" secondAttribute="trailing" constant="8" id="9BB-6H-7Tl"/>
                                             <constraint firstItem="aGb-8d-nur" firstAttribute="leading" secondItem="6WR-sX-0eO" secondAttribute="leading" constant="8" id="QWe-SM-NpT"/>
                                             <constraint firstAttribute="trailing" secondItem="Get-ja-Ii3" secondAttribute="trailing" id="cU9-Ul-C5i"/>
                                             <constraint firstItem="aGb-8d-nur" firstAttribute="top" secondItem="6WR-sX-0eO" secondAttribute="top" constant="8" id="kZj-D2-9yB"/>
