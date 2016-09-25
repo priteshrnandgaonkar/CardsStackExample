@@ -14,16 +14,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var pokemon: UIImageView!
     var cardState: CardsPosition = .Collapsed
-    var configuration = Configuration(cardOffset: 40, collapsedHeight: 200, expandedHeight: 600, cardHeight: 200, downwardThreshold: 20, upwardThreshold: 20, leftSpacing: 8.0, rightSpacing: 8.0, verticalSpacing: 8.0)
-    
     var cardsManager: CardsStack = CardsStack()
     var pokemons = [Pokemon(name: "Pikachu", imageName:"pika"), Pokemon(name: "Squirtle", imageName:"squirtle"), Pokemon(name: "Blastoise", imageName:"blastoise"), Pokemon(name: "Charmender", imageName:"charmender"), Pokemon(name: "Raichu", imageName:"raichu"), Pokemon(name: "Evy", imageName:"evy"),Pokemon(name: "Charizard", imageName:"charizard"),Pokemon(name: "gengar", imageName:"gengar"),Pokemon(name: "Alakazam", imageName:"alakazam")]
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        cardsManager = CardsStack(cardsState: cardState, configuration: configuration, collectionView: collectionView, collectionViewHeight: heightConstraint)
+        
+        let expandedHeight = Float(UIScreen.main.bounds.size.height - 124)
+        let config = Configuration(cardOffset: 40, collapsedHeight: 200, expandedHeight: expandedHeight, cardHeight: 200, downwardThreshold: 20, upwardThreshold: 20, leftSpacing: 8.0, rightSpacing: 8.0, verticalSpacing: 8.0)
+        
+        cardsManager = CardsStack(cardsState: cardState, configuration: config, collectionView: collectionView, collectionViewHeight: heightConstraint)
         cardsManager.delegate = self
     }
 
@@ -34,9 +37,15 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UICollectionViewDataSource, CardsManagerDelegate {
+    
     func tappedOnCardsStack(cardsCollectionView: UICollectionView) {
         cardsManager.updateView(with: .Expanded)
     }
+    
+    func cardsCollectionView(_ cardsCollectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            print("Selected \(pokemons[indexPath.item].name)")
+    }
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }

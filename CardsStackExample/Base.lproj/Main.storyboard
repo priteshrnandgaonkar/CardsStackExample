@@ -65,17 +65,26 @@
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="1DQ-lP-idB"/>
                                 </connections>
                             </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Y1t-eL-C68">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Uzg-nz-hjU"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="2gi-tX-Tid" secondAttribute="trailing" id="374-3k-lTw"/>
+                            <constraint firstItem="Y1t-eL-C68" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="8" id="GND-y4-P1n"/>
+                            <constraint firstAttribute="trailing" secondItem="Y1t-eL-C68" secondAttribute="trailing" constant="8" id="LxR-Ig-3q2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2gi-tX-Tid" secondAttribute="bottom" id="ORo-lZ-srd"/>
+                            <constraint firstItem="Y1t-eL-C68" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="aD1-hH-6cr"/>
                             <constraint firstItem="2gi-tX-Tid" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dk8-b5-4zK"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="2gi-tX-Tid" id="nHq-9Y-ddk"/>
                         <outlet property="heightConstraint" destination="SXu-to-dhc" id="PGA-og-8t8"/>
+                        <outlet property="pokemon" destination="Y1t-eL-C68" id="C0T-qg-HM2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,5 +94,6 @@
     </scenes>
     <resources>
         <image name="error" width="225" height="225"/>
+        <image name="pokemon_logo" width="1000" height="368"/>
     </resources>
 </document>
