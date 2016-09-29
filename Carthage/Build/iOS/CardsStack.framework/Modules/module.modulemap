@@ -1,0 +1,10 @@
+framework module CardsStack {
+  umbrella header "CardsStack.h"
+
+  export *
+  module * { export * }
+}
+
+module CardsStack.Swift {
+    header "CardsStack-Swift.h"
+}
